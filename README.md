@@ -1,2 +1,2 @@
-# Long-read sequencing of 5 pig reproductive organ transcriptomes with the Pacific Bioscience RSII platform
-## modified code
+# Long- and short-read RNA sequencing from five reproductive organs of boar
+
