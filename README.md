@@ -9,6 +9,7 @@ gmap
 cDNA_Cupcake
 SQANTI3
 ```
+# Software installation
 
 ``` sh
 # install SMRT LINK
@@ -32,11 +33,13 @@ cd .
 ## install gmap
 conda install gmap
 ```
+# Usage
 
 ``` sh
+git clone git@github.com:zhipengliu92/pipIsoseq.git
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/sequence/
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/
 ```
 
-# Long- and short-read RNA sequencing from five reproductive organs of boar
+
 
