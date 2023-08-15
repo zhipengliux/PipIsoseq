@@ -11,9 +11,12 @@ SQANTI3
 ```
 
 ``` sh
+# install SMRT LINK
+wget -c https://downloads.pacbcloud.com/public/software/installers/smrtlink_12.0.0.177059.zip
+unzip smrtlink_12.0.0.177059.zip
+./smrtlink_12.0.0.177059.run --rootdir /your_dir/smrtlink/smrtlink --no-extract
 # Add SMRT LINK to the $PATH
-export PATH=/HomeDir/smrtlink/smrtcmds/bin:$PATH
-
+export PATH=/your_dir/smrtlink/smrtcmds/bin:$PATH
 # install SQANTI3
 git clone https://github.com/ConesaLab/SQANTI3.git
 cd SQANTI3
