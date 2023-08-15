@@ -31,7 +31,11 @@ python setup.py install
 cd .
 ## install gmap
 conda install gmap
+```
 
+``` sh
+export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/sequence/
+export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/
 ```
 
 # Long- and short-read RNA sequencing from five reproductive organs of boar
