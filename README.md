@@ -33,13 +33,20 @@ cd .
 ## install gmap
 conda install gmap
 ```
+# Pipeline setup
+
+``` sh
+wget -c https://ftp.ensembl.org/pub/release-110/fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa.gz
+# build genome index
+gmap_build -d ssc_ens107db Sus_scrofa.Sscrofa11.1.dna.toplevel.fa.gz
+```
 # Usage
 
 ``` sh
 git clone git@github.com:zhipengliu92/pipIsoseq.git
+source activate pippacbio
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/sequence/
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/
+
 ```
-
-
 
