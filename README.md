@@ -3,7 +3,6 @@
 This pipeline is designed to run on Linux servers and requires the following software.
 
 ``` sh
-# Use conda install
 SMRT-LINK #https://www.pacb.com/support/software-downloads
 gmap 
 cDNA_Cupcake
@@ -21,9 +20,10 @@ export PATH=/your_dir/smrtlink/smrtcmds/bin:$PATH
 # install SQANTI3
 git clone https://github.com/ConesaLab/SQANTI3.git
 cd SQANTI3
-mv SQANTI3.conda_env.yml pippacbio.yml
+less SQANTI3.conda_env.yml|sed 's/SQANTI3.env/pippacbio/' > pippacbio.yml
+conda env create -f pippacbio.yml
 source activate pippacbio
-cd .
+cd ..
 ## install cDNA_Cupcake
 git clone https://github.com/Magdoll/cDNA_Cupcake.git
 cd cDNA_Cupcake
@@ -31,7 +31,7 @@ python setup.py build
 python setup.py install
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/sequence/
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/
-cd .
+cd ..
 ## install gmap
 conda install gmap
 ```
@@ -45,7 +45,7 @@ gmap_build -d ssc_ensdb Sus_scrofa.Sscrofa11.1.dna.toplevel.fa.gz
 # Usage
 
 ``` sh
-git clone git@github.com:zhipengliu92/PipIsoseq.git
+git clonehttps://github.com/zhipengliu92/PipIsoseq.git
 source activate pippacbio
 # example
 bash 01.run_ccs.sh m64082_200109_050254.subreads.4--4.bam JJ27GW 3 0.9
