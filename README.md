@@ -11,7 +11,7 @@ SQANTI3
 # Software installation
 
 ``` sh
-# install SMRT LINK
+# install SMRTLINK
 wget -c https://downloads.pacbcloud.com/public/software/installers/smrtlink_12.0.0.177059.zip
 unzip smrtlink_12.0.0.177059.zip
 ./smrtlink_12.0.0.177059.run --rootdir /your_dir/smrtlink/smrtlink --no-extract
