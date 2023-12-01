@@ -47,6 +47,7 @@ gmap_build -d ssc_ensdb Sus_scrofa.Sscrofa11.1.dna.toplevel.fa.gz
 ``` sh
 git clonehttps://github.com/zhipengliu92/PipIsoseq.git
 source activate pippacbio
+Then you can run `bash 01.run_ccs.sh` without argument to print the help message. 
 # example
 bash 01.run_ccs.sh m64082_200109_050254.subreads.4--4.bam JJ27GW 3 0.9
 bash 02.run_lima.sh JJ27GW.ccs.bam
