@@ -49,9 +49,9 @@ git clone https://github.com/zhipengliu92/PipIsoseq.git
 source activate pippacbio
 Then you can run `bash 01.run_ccs.sh` without argument to print the help message. 
 # example
-bash 01.run_ccs.sh m64082_200109_050254.subreads.4--4.bam JJ27GW 3 0.9
-bash 02.run_lima.sh JJ27GW.ccs.bam
-bash 03.run_refine.sh JJ27GW.ccs.fl.*Clontech_3p.bam
+bash 01.run_ccs.sh data/split.5p--bc1001_3p.subreads.bam JJ27GW 3 0.9
+bash 02.run_lima.sh JJ27GW.ccs.bam data/primer.fasta
+bash 03.run_refine.sh JJ27GW.ccs.fl.*Clontech_3p.bam data/primer.fasta
 bash 04.run_cluster.sh JJ27GW.ccs.fl.*Clontech_3p.flnc.bam JJ27GW
 bash 05.run_gmap.sh JJ27GW.ccs.flnc.clustered.hq.fasta ssc_ens107db
 bash 06.run_cDNA_Cupcake.sh --fasta JJ27GW.ccs.flnc.clustered.hq.fasta --sam JJ27GW.ccs.flnc.clustered.hq.fasta.ssc_ens107db.sorted.sam --csv JJ27GW.ccs.flnc.clustered.cluster_report.csv --outputprefix JJ27GW
