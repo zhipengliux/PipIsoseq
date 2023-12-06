@@ -19,7 +19,7 @@ else
 	echo "  Input reference gtf/gff: "$rgtf
 	echo "  Input reference genome: "$rgenome
 	echo "  Output dir: "$outputdir
-	sqanti3_qc.py $gff \
+	python /home/data/vip6t05/soft/SQANTI3/sqanti3_qc.py $gff \
 		$rgtf \
 		$rgenome \
 		-o $outprefix \
@@ -30,6 +30,6 @@ else
 		2>${outputdir}/err.log && \
 		echo "	Finished to compare with annotation gtf"
 	ed=`date`
-	echo "Start time: "$st
-	echo "End time: "$ed
-
+	echo "Started time: "$st
+	echo "Ended time: "$ed
+fi

@@ -136,5 +136,5 @@ elif [[ $nomono == "0" ]];then
 	echo "Don't remove monoexon isoforms"
 fi
 ed=`date`
-echo "Start time: "$st
-echo "End time: "$ed
+echo "Started time: "$st
+echo "Ended time: "$ed
