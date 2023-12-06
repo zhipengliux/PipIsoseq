@@ -55,6 +55,7 @@ bash 05.run_gmap.sh JJ27GW.ccs.flnc.clustered.hq.fasta ssc_ens107db
 bash 06.run_cDNA_Cupcake.sh --fasta JJ27GW.ccs.flnc.clustered.hq.fasta --sam JJ27GW.ccs.flnc.clustered.hq.fasta.ssc_ens107db.sorted.sam --csv JJ27GW.ccs.flnc.clustered.cluster_report.csv --outputprefix JJ27GW
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/sequence/
 export PYTHONPATH=$PYTHONPATH:<path_to>/cDNA_Cupcake/
+export PATH=$PATH:<path_to>/SQANTI3/
 bash 07.run_sqanti3_qc.sh JJ27GW.collapsed.filtered.gff ssc_ens107db SQANTI3_JJ27_Tes
 ```
 
