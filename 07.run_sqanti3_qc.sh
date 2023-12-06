@@ -5,7 +5,7 @@ if [ ! -n "$4" ]
 then
 	echo "                           **SQANTI3 QC**                             "
 	echo "  Usage: bash `basename $0` [unannotated gff/gtf] [ref gtf] [ref genome] [outprefix]"
-	echo "  Example: bash `basename $0` JJ27_Tes.collapsed.filtered.gff ssc_ens107db SQANTI3_JJ27_Tes"
+	echo "  Example: bash `basename $0` JJ27_Tes.collapsed.filtered.gff ref.gtf ref.fa SQANTI3_JJ27_Tes"
 	echo "  The result will be put in SQANTI3_JJ27_Tes directory."
 else
 	gff=$1
