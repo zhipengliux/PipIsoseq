@@ -19,7 +19,7 @@ else
 	echo "  Input reference gtf/gff: "$rgtf
 	echo "  Input reference genome: "$rgenome
 	echo "  Output dir: "$outputdir
-	python /home/data/vip6t05/soft/SQANTI3/sqanti3_qc.py $gff \
+	sqanti3_qc.py $gff \
 		$rgtf \
 		$rgenome \
 		-o $outprefix \
