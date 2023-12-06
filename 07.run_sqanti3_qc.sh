@@ -1,5 +1,4 @@
 #!/bin/bash
-st=`date`
 
 if [ ! -n "$4" ]
 then
@@ -19,6 +18,7 @@ else
 	echo "  Input reference gtf/gff: "$rgtf
 	echo "  Input reference genome: "$rgenome
 	echo "  Output dir: "$outputdir
+ 	st=`date`
 	sqanti3_qc.py $gff \
 		$rgtf \
 		$rgenome \
